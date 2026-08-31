@@ -1,7 +1,6 @@
 
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
 
 from resume_parser import extract_text_from_pdf
 from skill_extractor import extract_skills
@@ -95,18 +94,6 @@ if uploaded_file:
     st.subheader("📊 Resume Score")
 
     remaining = 100 - score
-
-    fig = go.Figure(
-        data=[
-            go.Pie(
-                labels=["Matched", "Missing"],
-                values=[score, remaining],
-                hole=0.65,
-                textinfo="none"
-            )
-        ]
-    )
-
     fig.update_layout(
         annotations=[
             dict(
@@ -125,11 +112,6 @@ if uploaded_file:
             t=20,
             b=20
         )
-    )
-
-    st.plotly_chart(
-        fig,
-        use_container_width=True
     )
 
 
