@@ -89,30 +89,47 @@ if uploaded_file:
 
 
     # --------------------------------
-    # 8. Resume Score Pie Chart
-    # --------------------------------
-    st.subheader("📊 Resume Score")
+# 8. Resume Score
+# --------------------------------
 
-    remaining = 100 - score
-    fig.update_layout(
-        annotations=[
-            dict(
-                text=f"{score}%",
-                x=0.5,
-                y=0.5,
-                font_size=32,
-                showarrow=False
-            )
-        ],
-        showlegend=True,
-        height=350,
-        margin=dict(
-            l=20,
-            r=20,
-            t=20,
-            b=20
-        )
-    )
+st.subheader("📊 Resume Score")
+
+st.markdown(
+    f"""
+    <div style="display:flex; justify-content:center; margin:20px;">
+        <div style="
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            background:conic-gradient(
+                #4CAF50 {score}%,
+                #e0e0e0 {score}% 100%
+            );
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        ">
+            <div style="
+                width:150px;
+                height:150px;
+                border-radius:50%;
+                background:white;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:32px;
+                font-weight:bold;
+            ">
+                {score}%
+            </div>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.write(f"✅ Matched Skills: {score}%")
+st.write(f"⚠️ Missing Skills: {100 - score}%")
 
 
     # --------------------------------
