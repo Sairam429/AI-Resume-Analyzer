@@ -1,0 +1,11 @@
+job_id,job_title,company,location,skills,job_description
+1,Data Scientist,TechCorp,Bangalore,"Python,SQL,Pandas,NumPy,Machine Learning,Scikit-learn","Develop machine learning models and analyze large datasets using Python and SQL."
+2,Data Analyst,DataWorks,Hyderabad,"Python,SQL,Excel,Power BI,Pandas,Statistics","Analyze business data and create dashboards using SQL, Excel and Power BI."
+3,Machine Learning Engineer,AI Solutions,Bangalore,"Python,Machine Learning,TensorFlow,PyTorch,Deep Learning,Docker","Build and deploy machine learning and deep learning models."
+4,Python Developer,CodeTech,Hyderabad,"Python,Django,REST API,SQL,Git","Develop backend applications and REST APIs using Python and Django."
+5,Business Analyst,AnalyticsPro,Chennai,"Excel,SQL,Power BI,Statistics,Communication","Analyze business requirements and provide data-driven insights."
+6,AI Engineer,FutureAI,Pune,"Python,Machine Learning,Deep Learning,NLP,TensorFlow","Develop artificial intelligence applications using machine learning and NLP."
+7,Data Engineer,CloudData,Bangalore,"Python,SQL,ETL,AWS,Spark,Hadoop","Build data pipelines and process large-scale datasets."
+8,NLP Engineer,LanguageAI,Hyderabad,"Python,NLP,Transformers,Deep Learning,PyTorch","Develop natural language processing applications using modern NLP techniques."
+9,Software Engineer,TechSoft,Chennai,"Python,Java,SQL,Git,Data Structures","Design and develop scalable software applications."
+10,Junior Data Scientist,InsightLabs,Remote,"Python,SQL,Pandas,Machine Learning,Statistics","Assist in developing predictive models and analyzing datasets."
